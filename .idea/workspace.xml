@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8d66fa4-4bc3-45d6-8209-a5ba6e29e249" name="Default Changelist" comment="" />
+    <list default="true" id="a8d66fa4-4bc3-45d6-8209-a5ba6e29e249" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +13,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="2264CYUfd2vAqSFPV263xfg6BHL" />
@@ -42,7 +49,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639144575663</updated>
-      <workItem from="1639144576818" duration="13806000" />
+      <workItem from="1639144576818" duration="24693000" />
+      <workItem from="1639173994843" duration="7132000" />
+      <workItem from="1639220022971" duration="7796000" />
     </task>
     <servers />
   </component>
@@ -50,9 +59,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="611" y="161" width="688" height="765" key="#PHP" timestamp="1639158567897">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="611" y="161" width="688" height="765" key="#PHP/1920.0.1600.900/0.27.1920.1053@0.27.1920.1053" timestamp="1639158567897" />
     <state x="756" y="464" width="397" height="158" key="NewPhpFileDialog" timestamp="1639146247360">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="756" y="464" width="397" height="158" key="NewPhpFileDialog/1920.0.1600.900/0.27.1920.1053@0.27.1920.1053" timestamp="1639146247360" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1639164736973">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/1920.0.1600.900/0.27.1920.1053@0.27.1920.1053" timestamp="1639164736973" />
   </component>
 </project>
