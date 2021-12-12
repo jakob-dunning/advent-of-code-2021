@@ -3,30 +3,29 @@
 class Day6
 {
     private const NUM_DAYS = 256;
-    private array $fishes = [];
+    private Swarm $swarm;
 
     public function run()
     {
+        $this->swarm = new Swarm();
         $data = file_get_contents(__DIR__ . '/../input/day6.txt');
-        $fishes = new ArrayObject($this->fishes);
 
         foreach (explode(",", $data) as $timer) {
-            $this->fishes[] = new Fish((int)$timer);
+            $this->swarm->add(new Fish((int)$timer));
         };
 
         for ($i = 0; $i < self::NUM_DAYS; $i++) {
             echo "$i\n";
-
             /** @var Fish $fish */
-            foreach (new ArrayIterator($this->fishes) as $fish) {
+            foreach ($this->swarm as $fish) {
                 $fish->decreaseTimer();
-                if($fish->hasSpawned() === true) {
-                    $this->fishes[] = new Fish(8);
+                if ($fish->hasSpawned() === true) {
+                    $this->swarm->add(new Fish(8));
                 }
             }
         }
 
-        echo count($this->fishes);
+        echo count($this->swarm);
     }
 }
 
@@ -54,12 +53,32 @@ class Fish
 
     public function hasSpawned(): bool
     {
-        if($this->spawn === true) {
+        if ($this->spawn === true) {
             $this->spawn = false;
 
             return true;
         }
 
         return false;
+    }
+}
+
+class Swarm implements IteratorAggregate, Countable
+{
+    private array $fishes;
+
+    public function add(Fish $fish)
+    {
+        $this->fishes[] = $fish;
+    }
+
+    public function getIterator(): ArrayIterator
+    {
+        return new ArrayIterator($this->fishes);
+    }
+
+    public function count(): int
+    {
+        return count($this->fishes);
     }
 }
